@@ -43,6 +43,15 @@ include_once('_header.php');
 	</div>
 
 	<div class="mt25">
+<<<<<<< HEAD
+		<a href="game_ready.php" class="_btn/purple w-full"><span class="btn-inner">빅스마일데이 바로가기</span></a>
+	</div>
+
+	<div class="mt25">
+		<a href="#"><img src="./img/banner/banner01.png" class="w-full"></a>
+	</div>	
+
+=======
 		<div class="border shadow-inset"><img src="./img/banner/img01.png" class="w-full"></div>
 	</div>
 	
@@ -50,6 +59,7 @@ include_once('_header.php');
 		<a href="game_ready.php" class="_btn/purple w-full"><span class="btn-inner">빅스마일데이 바로가기</span></a>
 	</div>
 
+>>>>>>> 651e3a0 (230426(1차))
 	<div class="noto mt20">
 		<div class="txt-deco1 fs12rem noto500">[이벤트 참여 유의사항]</div>
 		<p class=" mt20">

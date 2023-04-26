@@ -52,7 +52,11 @@ include_once('_header.php');
 	</div>
 	
 	<div class="mt25">
+<<<<<<< HEAD
+		<a href="#"><img src="./img/banner/banner02.png" class="w-full"></a>
+=======
 		<div class="border shadow-inset"><img src="./img/banner/img01.png" class="w-full"></div>
+>>>>>>> 651e3a0 (230426(1차))
 	</div>
 	
 	<div class="mt25">

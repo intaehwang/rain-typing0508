@@ -12,13 +12,21 @@ include_once('_header.php');
 			랭킹에 보여질<br>
 			이니셜 3글자를 입력해주세요
 		</p>
+<<<<<<< HEAD
 		<p class="inputContainer"><input type="email" name="" id="inp_initial" maxLength="3" placeholder="_" style="text-transform: uppercase;"/><span class="icon_form_check"></span></p>
+=======
+		<p class="inputContainer"><input type="text" name="" id="inp_initial" maxLength="3" placeholder="_"><span class="icon_form_check"></span></p>
+>>>>>>> 651e3a0 (230426(1차))
 
 		<p class="form-label mt25">
 			본인의 이름을 입력해주세요<br>
 			<span class="fs12rem color-blue">(해당 정보는 랭킹에 노출되지 않습니다)</span>
 		</p>
+<<<<<<< HEAD
 		<p class="inputContainer"><input type="text" name="" id="inp_name" placeholder="_" style="ime-mode:active;"><span class="icon_form_check"></span></p>
+=======
+		<p class="inputContainer"><input type="text" name="" id="inp_name" placeholder="_"><span class="icon_form_check"></span></p>
+>>>>>>> 651e3a0 (230426(1차))
 
 		
 		<p class="form-label mt25">
@@ -30,7 +38,11 @@ include_once('_header.php');
 
 
 		<div class="mt30 flex column flex-top">
+<<<<<<< HEAD
 			<label class="labelCheckbox flex-top"><input type="checkbox" name="agree" id="agree" value="1"><span></span><div style="line-height:1em">(필수) 개인정보 수집·이용동의</div></label>
+=======
+			<label class="labelCheckbox flex-top"><input type="checkbox" name="agree" value="1"><span></span><div style="line-height:1em">(필수) 개인정보 수집·이용동의</div></label>
+>>>>>>> 651e3a0 (230426(1차))
 			<span data-href="#pop-notice" class="pop-inline color-red" style="font-size:10rem;display:inline-block;margin-left:45px;margin-top:-10px">[개인정보 수집이용 내역 및 위탁업무 자세히 보기]</span>
 		</div>
 
@@ -69,7 +81,11 @@ include_once('_header.php');
 		</div>
 		
 		<div class="btnSet mt25">
+<<<<<<< HEAD
 			<button type="button" class="_btn w-full" id="submit"><span class="btn-inner color-gray">랭킹등록하기</span></button><!--입력폼이 완료되면 class=color-gray 제거 (버튼 활성화 컬러) -->
+=======
+			<button type="button" class="_btn w-full"><span class="btn-inner color-gray">랭킹등록하기</span></button><!--입력폼이 완료되면 class=color-gray 제거 (버튼 활성화 컬러) -->
+>>>>>>> 651e3a0 (230426(1차))
 		</div>
 	</div>
 	</form>
@@ -77,6 +93,7 @@ include_once('_header.php');
 </section>
 
 <script>
+<<<<<<< HEAD
 //입력폼 완료 채크
 function form_complete(msg=false) {
 	var complete = true;
@@ -120,6 +137,8 @@ function form_complete(msg=false) {
 	}
 
 }
+=======
+>>>>>>> 651e3a0 (230426(1차))
 //이니셜
 $("#inp_initial").bind("keyup", function() {
 	var nc = $(this).val().length;
@@ -128,8 +147,12 @@ $("#inp_initial").bind("keyup", function() {
 	} else {
 		$(this).next('.icon_form_check').removeClass('active');
 	}
+<<<<<<< HEAD
 	$(this).val($(this).val().replace(/\,/g, '').replace(/[^A-Z]/ig, ''));
 	form_complete();
+=======
+	$(this).val($(this).val().toUpperCase()); //대문자로 입력
+>>>>>>> 651e3a0 (230426(1차))
 });
 
 //이름
@@ -140,7 +163,10 @@ $("#inp_name").bind("keyup", function() {
 	} else {
 		$(this).next('.icon_form_check').removeClass('active');
 	}
+<<<<<<< HEAD
 	form_complete();
+=======
+>>>>>>> 651e3a0 (230426(1차))
 });
 
 //전화번호
@@ -151,6 +177,7 @@ $("#inp_phone").bind("keyup", function(event) {
 	} else {
 		$(this).next('.icon_form_check').removeClass('active');
 	}
+<<<<<<< HEAD
 	form_complete();
 });
 
@@ -162,6 +189,8 @@ $('#agree').click(function(){
 //등록버튼
 $('#submit').click(function(){
 	form_complete(true);
+=======
+>>>>>>> 651e3a0 (230426(1차))
 });
 </script>
 

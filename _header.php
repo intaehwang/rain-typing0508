@@ -28,5 +28,5 @@ include_once('_common.lib.php');
 
 	<header id="header">
 		<div class="logo">G마켓 타자왕</div>	
-		<a href="index.php" class="home"><img src="./img/icon/home.svg" style="width:24px;height:24px;"></a>
+		<a href="index.php" class="home"><img src="./img/icon/home.png" style="width:18px;height:20px;"></a>
 	</header>
