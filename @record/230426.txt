@@ -1,0 +1,116 @@
+
+
+img 폴더 업데이트
+css 폴더 업데이트
+
+
+카카오공유 이미지 교채
+경품안내 1 -> 경품명 수정(텍스트)
+랭킹등록 이름 등록 문구 및 휴대폰번호 글자수 제한
+
+추가 - 이벤트 종료 팝업
+
+
+
+
+
+
+
+ranking_save.php (수정된부분)
+
+
+<input type="email" name="" id="inp_initial" class="noto" maxLength="3" placeholder="_" style="text-transform: uppercase;"/>
+
+<input type="text" name="" id="inp_name" placeholder="_" style="ime-mode:active;">
+
+<input type="checkbox" name="agree" id="agree" value="1">
+
+
+<script>
+//입력폼 완료 채크
+function form_complete(msg=false) {
+	var complete = true;
+	if(!$("#inp_initial").next('.icon_form_check').hasClass('active')) {
+		var complete = false;
+		if(msg) {
+			alert('이니셜 3글자를 입력해주세요');
+			$("#inp_initial").focus();
+			return false;
+		}
+	}
+	if(!$("#inp_name").next('.icon_form_check').hasClass('active')) {
+		var complete = false;
+		if(msg) {
+			alert('이름을 입력해주세요');
+			$("#inp_name").focus();
+			return false;
+		}
+	}
+	if(!$("#inp_phone").next('.icon_form_check').hasClass('active')) {
+		var complete = false;
+		if(msg) {
+			alert('휴대폰번호를 입력해주세요');
+			$("#inp_phone").focus();
+			return false;
+		}
+	}
+	if(!$("#agree").is(':checked')) {
+		var complete = false;
+		if(msg) {
+			alert('개인정보 수집·이용동의란에 채크해주세요.');
+			$("#agree").focus();
+			return false;
+		}
+	}
+
+	if(complete) {
+		$('#submit .btn-inner').removeClass('color-gray');
+	} else {
+		$('#submit .btn-inner').addClass('color-gray');
+	}
+
+}
+//이니셜
+$("#inp_initial").bind("keyup", function() {
+	var nc = $(this).val().length;
+	if(nc==3) {
+		$(this).next('.icon_form_check').addClass('active');
+	} else {
+		$(this).next('.icon_form_check').removeClass('active');
+	}
+	$(this).val($(this).val().replace(/\,/g, '').replace(/[^A-Z]/ig, ''));
+	form_complete();
+});
+
+//이름
+$("#inp_name").bind("keyup", function() {
+	var nc = $(this).val().length;
+	if(nc>1) {
+		$(this).next('.icon_form_check').addClass('active');
+	} else {
+		$(this).next('.icon_form_check').removeClass('active');
+	}
+	form_complete();
+});
+
+//전화번호
+$("#inp_phone").bind("keyup", function(event) {
+	var nc = $(this).val().length;
+	if(nc==11||nc==10) {
+		$(this).next('.icon_form_check').addClass('active');
+	} else {
+		$(this).next('.icon_form_check').removeClass('active');
+	}
+	form_complete();
+});
+
+//개인정보 수집·이용동의
+$('#agree').click(function(){
+	form_complete();
+});
+
+//등록버튼
+$('#submit').click(function(){
+	form_complete(true);
+});
+</script>
