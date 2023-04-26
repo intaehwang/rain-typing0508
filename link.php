@@ -32,38 +32,28 @@ function txtRecord($dir) {if(is_dir($dir)) {$handle  = opendir($dir);$files = ar
 
 <div id="publishingContainer">
 	
-	<ul class="page-link">		
-<<<<<<< HEAD
-		<li><a href="index.php" target="_blank" class="change" data-date="23.04.26">홈화면</a></li>
-=======
-		<li><a href="index.php" target="_blank" class="change" data-date="23.04.25">홈화면</a></li>
->>>>>>> 651e3a0 (230426(1차))
-		<li><button data-href="#pop-game-info" class="pop-inline change" data-date="23.04.25">게임설명</button></li>
-		<li><button data-href="#pop-ranking" class="pop-inline change" data-date="23.04.25">오늘의 랭킹</button></li>
-		<li><button data-href="#pop-giveaway_1" class="pop-inline change" data-date="23.04.26">경품 안내1</button></li>
-		<li><button data-href="#pop-giveaway_2" class="pop-inline change" data-date="23.04.25">경품 안내2</button></li>
-		<li><button data-href="#pop-giveaway_3" class="pop-inline change" data-date="23.04.25">경품 안내3</button></li>
-		<li><button data-href="#pop-giveaway_4" class="pop-inline change" data-date="23.04.25">경품 안내4</button></li>
+	<ul class="page-link">
+		<li><a href="index.php" target="_blank" class="change">홈화면</a></li>
 
-		<li class="mt30"><a href="game_ready.php" target="_blank" class="change" data-date="23.04.25">게임 준비</a></li>
-		<li class=""><a href="game.php" target="_blank" class="change" data-date="23.04.25">게임화면</a></li>
+		<li><button data-href="#pop-game-info" class="pop-inline change">게임설명</button></li>
+		<li><button data-href="#pop-ranking" class="pop-inline change">오늘의 랭킹</button></li>
+		<li><button data-href="#pop-giveaway_1" class="pop-inline change">경품 안내1</button></li>
+		<li><button data-href="#pop-giveaway_2" class="pop-inline change">경품 안내2</button></li>
+		<li><button data-href="#pop-giveaway_3" class="pop-inline change">경품 안내3</button></li>
+		<li><button data-href="#pop-giveaway_4" class="pop-inline change">경품 안내4</button></li>
 
-<<<<<<< HEAD
-		<li class="mt30"><a href="game_over.php" target="_blank" class="change" data-date="23.04.26">게임오버</a></li>
-=======
-		<li class="mt30"><a href="game_over.php" target="_blank" class="change" data-date="23.04.25">게임오버</a></li>
->>>>>>> 651e3a0 (230426(1차))
+		<li class="mt30"><a href="game_ready.php" target="_blank" class="change">게임 준비</a></li>
+		<li class=""><a href="game.php" target="_blank" class="change">게임화면</a></li>
+
+		<li class="mt30"><a href="game_over.php" target="_blank" class="change">게임오버</a></li>
+
 		<li><button data-href="#pop-notice" class="pop-inline">개인정보 수집·이용 안내</button></li>
 
-		<li class="mt30"><a href="ranking_save.php" target="_blank" class="change" data-date="23.04.26">랭킹등록</a></li>
+		<li class="mt30"><a href="ranking_save.php" target="_blank" class="change">랭킹등록</a></li>
 
-<<<<<<< HEAD
-		<li class="mt30"><a href="game_result.php" target="_blank" class="change" data-date="23.04.26">랭킹등록완료</a></li>
-=======
-		<li class="mt30"><a href="game_result.php" target="_blank" class="change" data-date="23.04.25">랭킹등록완료</a></li>
->>>>>>> 651e3a0 (230426(1차))
+		<li class="mt30"><a href="game_result.php" target="_blank" class="change">랭킹등록완료</a></li>
 
-		<li><button data-href="#pop-event-end" class="pop-inline add" data-date="23.04.26">이벤트 종료</button></li>
+		<li><button data-href="#pop-event-end" class="pop-inline add">이벤트 종료</button></li>
 	</ul>
 
 </div>

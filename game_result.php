@@ -45,16 +45,12 @@ if($ranking < 100) $tagColor = 'yellow';
 	</div>
 	
 	<div class="mt25">
-<<<<<<< HEAD
 		<a href="#"><img src="./img/banner/banner03.png" class="w-full"></a>
-=======
-		<div class="border shadow-inset"><img src="./img/banner/img01.png" class="w-full"></div>
->>>>>>> 651e3a0 (230426(1차))
 	</div>
 	
-	<div class="mt25">
+	<!--<div class="mt25">
 		<a href="#" class="_btn/purple w-full"><span class="btn-inner">빅스마일데이 쿠폰받기</span></a>
-	</div>
+	</div>-->
 	<div class="mt25">
 		<a href="index.php" class="_btn home w-full"><span class="btn-inner">게임 홈으로</span></a>
 	</div>

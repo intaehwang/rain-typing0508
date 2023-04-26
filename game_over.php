@@ -52,16 +52,12 @@ include_once('_header.php');
 	</div>
 	
 	<div class="mt25">
-<<<<<<< HEAD
 		<a href="#"><img src="./img/banner/banner02.png" class="w-full"></a>
-=======
-		<div class="border shadow-inset"><img src="./img/banner/img01.png" class="w-full"></div>
->>>>>>> 651e3a0 (230426(1차))
 	</div>
 	
-	<div class="mt25">
+	<!--<div class="mt25">
 		<a href="#" class="_btn/purple w-full"><span class="btn-inner">더 많은 상품 보러가기</span></a>
-	</div>
+	</div>-->
 
 </section>
 
