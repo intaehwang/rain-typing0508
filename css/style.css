@@ -28,8 +28,11 @@ html, body{/*font-size:3vw;*/font-size:0.28vw;cursor:url("./img/cursor.svg"), au
 .btnSet ._btn:not(.w-full){width:calc(50% - 8px);}
 	
 	[class*='_btn']{position:relative;font-size:28rem;display:flex;border-radius:4px;}
+	
 	._btn{color:#000;border:2px solid #C6C6C6;}
 	._btn .btn-inner{width:100%;display:flex;align-items:center;justify-content:center;height:44rem;padding-top:0.1em;background:#D9D9D9;border:1px solid #ABABAB;box-shadow: inset -7px -5px 4px rgba(32, 32, 32, 0.1), inset 7px 5px 4px #FAFAFA;border-radius:3px;}
+	._btn\/lg{color:#000;border:2px solid #C6C6C6;}
+	._btn\/lg .btn-inner{width:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5rem;height:56rem;padding-top:0.3em;background:#D9D9D9;border:1px solid #ABABAB;box-shadow: inset -7px -5px 4px rgba(32, 32, 32, 0.1), inset 7px 5px 4px #FAFAFA;border-radius:3px;}
 	._btn\/red{color:#fff;}
 	._btn\/red .btn-inner{width:100%;display:flex;align-items:center;justify-content:center;height:44rem;padding-top:0;background:#B30009;border:3px solid #0C203F;box-shadow: inset 7px 5px 4px #F19296;border-radius:3px;}
 	._btn\/purple{color:#fff;}
